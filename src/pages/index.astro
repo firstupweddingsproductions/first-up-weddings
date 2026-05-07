@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Startseite" description="First Up Weddings. Cinematische Hochzeitsfilme, die Emotionen bewahren. Euer Tag, erzählt wie ein Film.">
+
+  <!-- HERO -->
+  <section class="relative min-h-[90vh] flex items-center justify-center bg-brand-warm overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-warm/30 via-brand-warm/50 to-brand-cream z-10"></div>
+    <div class="absolute inset-0">
+      <!-- Hero background. To replace with a video later, swap this gradient div for:
+           <video src="/hero-wedding.mp4" poster="/hero-wedding-poster.jpg" autoplay muted loop playsinline preload="metadata" class="w-full h-full object-cover"></video> -->
+      <div class="w-full h-full bg-gradient-to-br from-brand-warm via-brand-cream to-brand-warm opacity-60"></div>
+    </div>
+    <div class="relative z-20 text-center px-6 max-w-3xl mx-auto">
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading font-normal leading-tight mb-6 text-brand-dark">
+        Euer Tag. Euer Film.<br /><span class="text-brand-accent">Eure Geschichte.</span>
+      </h1>
+      <p class="text-lg md:text-xl text-brand-text max-w-xl mx-auto mb-10 font-light leading-relaxed">
+        Cinematische Hochzeitsfilme, die Emotionen bewahren.
+      </p>
+      <a href="/kontakt" class="btn-primary">Kontakt aufnehmen</a>
+    </div>
+  </section>
+
+  <!-- EMOTIONALER INTROTEXT -->
+  <section class="section-padding bg-brand-cream">
+    <div class="container-narrow text-center">
+      <p class="text-xl md:text-2xl font-heading font-normal text-brand-dark leading-relaxed max-w-2xl mx-auto">
+        Ein Hochzeitsfilm von First Up Weddings hält genau das Gefühl fest, das SIE möchten.
+      </p>
+      <p class="mt-6 text-brand-accent font-heading text-lg italic">Cinematisch. Ehrlich. Für immer euer.</p>
+    </div>
+  </section>
+
+  <!-- WAS EINEN GUTEN HOCHZEITSFILM AUSMACHT -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow">
+      <h2 class="text-3xl md:text-4xl font-heading text-center text-brand-dark mb-16">Was einen guten Hochzeitsfilm ausmacht</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-lg font-heading text-brand-accent mb-3">Echte Momente, keine Inszenierung</h3>
+          <p class="text-brand-text leading-relaxed">Die schönsten Szenen passieren, wenn niemand an die Kamera denkt. Ein guter Hochzeitsfilm fängt genau dieses ungefilterte, authentische und cinematische Feeling ein.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-heading text-brand-accent mb-3">Emotion statt Dokumentation</h3>
+          <p class="text-brand-text leading-relaxed">Ein Hochzeitsfilm ist kein Mitschnitt. Es ist ein Film, der euch fühlen lässt, wie sich dieser Tag angefühlt hat: das Herzklopfen, die Aufregung, die Erleichterung, die Freude.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-heading text-brand-accent mb-3">Cinematische Bildsprache</h3>
+          <p class="text-brand-text leading-relaxed">Euer Film sieht aus und fühlt sich an wie ein richtiger Film, mit durchdachter Kameraführung, natürlichem Licht und einer visuellen Sprache, die eure Geschichte trägt.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-heading text-brand-accent mb-3">Für immer abrufbar</h3>
+          <p class="text-brand-text leading-relaxed">Fotos halten Momente fest. Aber nur ein Film bewahrt die Stimmen, das Lachen, die Musik und die Atmosphäre: alles, was diesen Tag zu eurem Tag gemacht hat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WIE ICH ARBEITE -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow">
+      <h2 class="text-3xl font-heading text-center text-brand-dark mb-16">Vom Kennenlernen zum fertigen Film.</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+        <div>
+          <div class="text-4xl font-heading text-brand-accent mb-4">01</div>
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Wir lernen uns kennen</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Ein unverbindliches Gespräch, per Video oder persönlich. Wir erfahren, wer ihr seid und was euch wichtig ist.</p>
+        </div>
+        <div>
+          <div class="text-4xl font-heading text-brand-accent mb-4">02</div>
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Euer Hochzeitstag</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Am Tag selbst sind wir leise dabei. Kein inszeniertes Posing, nur echte Momente, cinematisch eingefangen.</p>
+        </div>
+        <div>
+          <div class="text-4xl font-heading text-brand-accent mb-4">03</div>
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Euer Film</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Nach der Hochzeit entsteht in sorgfältiger Postproduktion euer Film, mit allem, was diesen Tag ausgemacht hat.</p>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="/euer-tag" class="text-sm text-brand-accent hover:text-brand-accent-hover transition-colors font-heading tracking-wide">Mehr über den Ablauf erfahren →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NICHT NUR HOCHZEITEN -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow text-center">
+      <h2 class="text-2xl font-heading text-brand-dark mb-6">Nicht nur der Hochzeitstag selbst.</h2>
+      <p class="text-brand-text max-w-2xl mx-auto leading-relaxed">
+        Hochzeiten stehen im Mittelpunkt unserer Arbeit. Aber eure Geschichte beginnt nicht erst am Altar. Ob Verlobungsfilm, Proposal-Begleitung, Engagement-Shooting als Bewegtbild oder ein Save-the-Date-Video: wenn es um euch und eure Geschichte geht, finden wir einen Weg, es festzuhalten. Sprecht uns einfach an.
+      </p>
+    </div>
+  </section>
+
+  <!-- MEIN VERSPRECHEN -->
+  <section class="section-padding bg-brand-cream">
+    <div class="container-narrow text-center">
+      <h2 class="text-3xl font-heading text-brand-dark mb-12">Was ihr von uns erwarten könnt</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto text-left">
+        <div class="bg-brand-warm p-8">
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Diskrete Begleitung</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Wir sind da, ohne im Weg zu sein. Eure Gäste sollen euren Tag genießen, nicht um eine Kamera herumnavigieren.</p>
+        </div>
+        <div class="bg-brand-warm p-8">
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Persönlicher Kontakt</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Vom ersten Gespräch bis zum fertigen Film sprecht ihr direkt mit uns. Keine Übergaben, keine Umwege: nur Filmemacher, die eure Geschichte kennen.</p>
+        </div>
+        <div class="bg-brand-warm p-8">
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Cinematischer Anspruch</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Unser Hintergrund liegt im Film, nicht in der Event-Dokumentation. Das spürt man in der Bildsprache, im Schnitt, in der Atmosphäre.</p>
+        </div>
+        <div class="bg-brand-warm p-8">
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Verlässlichkeit</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Klare Absprachen, verbindliche Termine, transparente Kommunikation. An eurem Tag sollt ihr euch auf nichts außer aufeinander konzentrieren müssen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABSCHLUSS CTA -->
+  <section class="section-padding bg-brand-cream">
+    <div class="container-narrow text-center">
+      <h2 class="text-3xl md:text-4xl font-heading text-brand-dark mb-6">Euer Tag verdient es, erinnert zu werden.</h2>
+      <p class="text-lg text-brand-text max-w-xl mx-auto mb-10">
+        Erzählt uns von eurer Hochzeit, und wir zeigen euch, wie euer Film aussehen kann.
+      </p>
+      <a href="/kontakt" class="btn-primary">Unverbindlich anfragen</a>
+    </div>
+  </section>
+
+</Layout>

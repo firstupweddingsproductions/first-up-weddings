@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Kontakt" description="Erzählt uns von eurem Tag. Wir freuen uns darauf, eure Geschichte zu hören.">
+
+  <section class="section-padding bg-brand-cream pt-32">
+    <div class="container-narrow">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+        <!-- Left: Text -->
+        <div>
+          <h1 class="text-4xl md:text-5xl font-heading text-brand-dark mb-6">Erzählt uns von eurem Tag.</h1>
+          <p class="text-brand-text leading-relaxed mb-10">
+            Wir freuen uns darauf, eure Geschichte zu hören. Schreibt uns, und wir melden uns so bald wie möglich persönlich bei euch.
+          </p>
+
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xs uppercase tracking-widest text-brand-accent mb-2">E-Mail</h3>
+              <a href="mailto:firstupweddings@gmail.com" class="text-brand-text hover:text-brand-accent transition-colors">firstupweddings@gmail.com</a>
+            </div>
+            <div>
+              <h3 class="text-xs uppercase tracking-widest text-brand-accent mb-2">Telefon</h3>
+              <a href="tel:+491732118910" class="text-brand-text hover:text-brand-accent transition-colors">+49 173 2118910</a>
+            </div>
+            <div>
+              <h3 class="text-xs uppercase tracking-widest text-brand-accent mb-2">Social Media</h3>
+              <div class="flex gap-4 text-brand-text">
+                <a href="https://www.instagram.com/firstupweddings/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent transition-colors">Instagram</a>
+                <span>Vimeo</span>
+                <a href="https://www.tiktok.com/@firstupweddings" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent transition-colors">TikTok</a>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xs uppercase tracking-widest text-brand-accent mb-2">Standort</h3>
+              <p class="text-brand-text">Deutschland. Hochzeiten deutschlandweit und darüber hinaus.</p>
+            </div>
+          </div>
+
+          <p class="text-sm text-brand-text/50 mt-10 italic">Ihr müsst noch gar nicht alles wissen. Kein perfektes Briefing nötig. Schreibt uns einfach, alles Weitere klären wir gemeinsam.</p>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="bg-brand-warm p-8 lg:p-10">
+          <form id="contact-form" class="space-y-6" novalidate>
+            <!-- Web3Forms access key for firstupweddings@gmail.com -->
+            <input type="hidden" name="access_key" value="d6563e44-690a-485c-a92e-9bf1721c261b" />
+            <input type="hidden" name="subject" value="Neue Anfrage über First Up Weddings" />
+            <input type="hidden" name="from_name" value="First Up Weddings Website" />
+            <!-- Honeypot field (visually hidden but reachable to bots) -->
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;" aria-hidden="true" />
+
+            <div>
+              <label for="names" class="block text-xs uppercase tracking-widest text-brand-text/60 mb-2">Eure Namen *</label>
+              <input type="text" id="names" name="names" required autocomplete="name" class="w-full bg-brand-cream border border-brand-dark/10 px-4 py-3 text-sm text-brand-dark focus:border-brand-accent focus:outline-none transition-colors" />
+            </div>
+            <div>
+              <label for="email" class="block text-xs uppercase tracking-widest text-brand-text/60 mb-2">E-Mail *</label>
+              <input type="email" id="email" name="email" required autocomplete="email" class="w-full bg-brand-cream border border-brand-dark/10 px-4 py-3 text-sm text-brand-dark focus:border-brand-accent focus:outline-none transition-colors" />
+            </div>
+            <div>
+              <label for="phone" class="block text-xs uppercase tracking-widest text-brand-text/60 mb-2">Telefonnummer</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Für einen Rückruf" class="w-full bg-brand-cream border border-brand-dark/10 px-4 py-3 text-sm text-brand-dark placeholder:text-brand-text/30 focus:border-brand-accent focus:outline-none transition-colors" />
+            </div>
+            <div>
+              <label for="date" class="block text-xs uppercase tracking-widest text-brand-text/60 mb-2">Hochzeitsdatum *</label>
+              <input type="text" id="date" name="date" required placeholder="Datum oder geplanter Zeitraum" class="w-full bg-brand-cream border border-brand-dark/10 px-4 py-3 text-sm text-brand-dark placeholder:text-brand-text/30 focus:border-brand-accent focus:outline-none transition-colors" />
+            </div>
+            <div>
+              <label for="location" class="block text-xs uppercase tracking-widest text-brand-text/60 mb-2">Location</label>
+              <input type="text" id="location" name="location" placeholder="Wenn schon bekannt" class="w-full bg-brand-cream border border-brand-dark/10 px-4 py-3 text-sm text-brand-dark placeholder:text-brand-text/30 focus:border-brand-accent focus:outline-none transition-colors" />
+            </div>
+            <div>
+              <label for="message" class="block text-xs uppercase tracking-widest text-brand-text/60 mb-2">Erzählt uns von euch</label>
+              <textarea id="message" name="message" rows="4" placeholder="Was ist euch wichtig an eurem Tag?" class="w-full bg-brand-cream border border-brand-dark/10 px-4 py-3 text-sm text-brand-dark placeholder:text-brand-text/30 focus:border-brand-accent focus:outline-none transition-colors resize-none"></textarea>
+            </div>
+
+            <button type="submit" id="contact-submit" class="btn-primary w-full text-center">Nachricht senden</button>
+
+            <p id="contact-status" class="text-sm leading-relaxed hidden" role="status" aria-live="polite"></p>
+
+            <p class="text-xs text-brand-text/50 leading-relaxed mt-2">
+              Mit dem Absenden willigst du ein, dass deine Angaben zur Bearbeitung deiner Anfrage verarbeitet werden. Mehr dazu in der <a href="/datenschutz" class="underline hover:text-brand-accent transition-colors">Datenschutzerklärung</a>.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById('contact-form') as HTMLFormElement | null;
+    const status = document.getElementById('contact-status') as HTMLParagraphElement | null;
+    const submitBtn = document.getElementById('contact-submit') as HTMLButtonElement | null;
+
+    if (form && status && submitBtn) {
+      const originalLabel = submitBtn.textContent ?? 'Nachricht senden';
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        status.classList.remove('hidden', 'text-brand-accent', 'text-red-700');
+        status.textContent = '';
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Wird gesendet …';
+
+        try {
+          const formData = new FormData(form);
+          const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData,
+          });
+          const json = await response.json();
+
+          if (response.ok && json.success) {
+            status.textContent = 'Vielen Dank! Eure Nachricht ist angekommen. Wir melden uns so bald wie möglich persönlich bei euch.';
+            status.classList.remove('hidden');
+            status.classList.add('text-brand-accent');
+            form.reset();
+          } else {
+            throw new Error(json.message || 'Senden fehlgeschlagen');
+          }
+        } catch (error) {
+          console.error(error);
+          status.textContent = 'Da ist leider etwas schiefgelaufen. Schreibt uns gerne direkt an firstupweddings@gmail.com — wir antworten schnell.';
+          status.classList.remove('hidden');
+          status.classList.add('text-red-700');
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalLabel;
+        }
+      });
+    }
+  </script>
+
+</Layout>

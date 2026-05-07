@@ -1,0 +1,99 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Investition" description="Euer Hochzeitsfilm: individuell, persönlich und auf euren Tag abgestimmt.">
+
+  <!-- INTRO -->
+  <section class="section-padding bg-brand-cream pt-32">
+    <div class="container-narrow text-center">
+      <h1 class="text-4xl md:text-5xl font-heading text-brand-dark mb-6">Euer Film, euer Rahmen.</h1>
+      <p class="text-lg text-brand-text max-w-xl mx-auto">Ein Hochzeitsfilm ist keine Ausgabe, sondern eine Investition in Erinnerungen, die bleiben.</p>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHIE -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow">
+      <div class="max-w-2xl mx-auto text-center space-y-6">
+        <p class="text-lg text-brand-text leading-relaxed">
+          Jede Hochzeit ist anders. Deshalb gibt es bei uns keine starren Pakete, sondern einen persönlichen Rahmen, der sich an eurem Tag, euren Wünschen und eurer Vision orientiert.
+        </p>
+        <p class="text-brand-text leading-relaxed">
+          Im Gespräch klären wir gemeinsam, was euch wichtig ist: ob ein kompakter Highlightfilm oder eine umfassendere filmische Begleitung eures gesamten Tages entsteht. Der Umfang richtet sich nach euren Vorstellungen und dem, was für euren Tag sinnvoll ist.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAS ENTHALTEN IST -->
+  <section class="section-padding bg-brand-cream">
+    <div class="container-narrow">
+      <h2 class="text-3xl font-heading text-center text-brand-dark mb-16">Was in jeder Zusammenarbeit enthalten ist</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div class="bg-brand-warm p-8">
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Persönliches Kennenlernen</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Ein ausführliches Gespräch, ob per Video oder persönlich. Wir lernen euch kennen, verstehen eure Vorstellungen und beraten euch offen und ehrlich.</p>
+        </div>
+        <div class="bg-brand-warm p-8">
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Professionelle Begleitung</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Am Hochzeitstag sind wir diskret dabei, mit professioneller Kameratechnik und dem Blick für die Momente, die euren Tag ausmachen.</p>
+        </div>
+        <div class="bg-brand-warm p-8">
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Sorgfältige Postproduktion</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Schnitt, Farbkorrektur, Tonmischung, Musikauswahl: euer Film bekommt die Sorgfalt und die Zeit, die er verdient.</p>
+        </div>
+        <div class="bg-brand-warm p-8">
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Euer fertiger Film</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Lieferung in höchster Qualität als Download. Eurer, für immer: zum Ansehen, Teilen und Wiedererleben.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÖGLICHKEITEN -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow">
+      <h2 class="text-3xl font-heading text-center text-brand-dark mb-6">Was darüber hinaus möglich ist</h2>
+      <p class="text-brand-text text-center max-w-2xl mx-auto mb-12">Je nachdem, was euch wichtig ist und wie euer Tag aussieht, lässt sich der Umfang individuell erweitern.</p>
+      <div class="max-w-2xl mx-auto space-y-4">
+        {[
+          'Ganztägige Begleitung, von den Vorbereitungen bis zum letzten Tanz',
+          'Kurzversion für Social Media, zum Teilen mit Familie und Freunden',
+          'Trailer-Teaser innerhalb weniger Tage nach der Hochzeit',
+          'Zusätzliche Kameraperspektive für größere Feiern',
+          'Rohschnitt-Sequenzen ausgewählter besonderer Momente',
+          'Getting-Ready-Begleitung am Vorabend oder am Morgen',
+          'Verlobungsfilm, Proposal-Begleitung oder Save-the-Date-Video',
+          'Ergänzende fotografische Aufnahmen im gleichen visuellen Stil, aus der Begleitung heraus',
+        ].map(item => (
+          <div class="flex items-start gap-4 text-brand-text">
+            <span class="text-brand-accent mt-1 shrink-0">—</span>
+            <p class="text-sm leading-relaxed">{item}</p>
+          </div>
+        ))}
+      </div>
+      <p class="text-sm text-brand-text/60 text-center mt-10 italic max-w-xl mx-auto">
+        Keine festen Pakete, sondern Bausteine, die sich an eurem Tag orientieren. Wenn gewünscht, können neben dem Film auch professionelle Fotos entstehen, im gleichen Stil, aus einer Hand. Im Gespräch finden wir gemeinsam heraus, was zu euch passt.
+      </p>
+    </div>
+  </section>
+
+  <!-- HINWEIS -->
+  <section class="section-padding bg-brand-cream">
+    <div class="container-narrow text-center">
+      <p class="text-brand-text leading-relaxed max-w-2xl mx-auto">
+        Die konkreten Investitionssummen besprechen wir gerne persönlich mit euch, damit wir ein Angebot machen können, das wirklich zu eurem Tag und euren Vorstellungen passt. Schreibt uns einfach, und wir melden uns mit allen Details.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow text-center">
+      <h2 class="text-3xl font-heading text-brand-dark mb-6">Erzählt uns von eurem Tag.</h2>
+      <p class="text-brand-text max-w-xl mx-auto mb-10">Schreibt uns, und wir schicken euch ein individuelles Angebot, zugeschnitten auf eure Wünsche.</p>
+      <a href="/kontakt" class="btn-primary">Unverbindlich anfragen</a>
+    </div>
+  </section>
+
+</Layout>

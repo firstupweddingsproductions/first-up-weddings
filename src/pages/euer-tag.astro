@@ -1,0 +1,131 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Euer Tag" description="Was euch erwartet: von der ersten Nachricht bis zum fertigen Film.">
+
+  <!-- INTRO + SHOWREEL -->
+  <section class="bg-brand-cream pt-32 lg:pt-0 pb-12 lg:pb-0">
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:min-h-[calc(100vh-73px)]">
+      <!-- Text on left -->
+      <div class="flex items-center justify-center lg:justify-start px-6 md:px-12 lg:pl-24 lg:pr-12 py-8 lg:py-24">
+        <div class="text-center lg:text-left max-w-xl">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading text-brand-dark mb-6">Was euch erwartet.</h1>
+          <p class="text-lg text-brand-text">Von der ersten Nachricht bis zum fertigen Film, Schritt für Schritt, ohne Stress, mit viel Vorfreude.</p>
+        </div>
+      </div>
+      <!-- Video, full right half -->
+      <div class="relative bg-brand-warm overflow-hidden h-[60vh] lg:h-auto">
+        <video src="/einblick.mp4" poster="/einblick-poster.jpg" autoplay muted loop playsinline preload="metadata" class="absolute inset-0 w-full h-full object-cover"></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABLAUF -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow">
+      <div class="space-y-16">
+
+        <div class="grid grid-cols-1 lg:grid-cols-[120px_1fr] gap-8 items-start">
+          <div class="text-5xl font-heading text-brand-accent">01</div>
+          <div>
+            <h2 class="text-2xl font-heading text-brand-dark mb-4">Eure Anfrage</h2>
+            <p class="text-brand-text leading-relaxed">Ihr schreibt uns und erzählt uns von euch, eurem Tag und dem, was euch wichtig ist. Kein formelles Briefing, einfach eine Nachricht.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[120px_1fr] gap-8 items-start">
+          <div class="text-5xl font-heading text-brand-accent">02</div>
+          <div>
+            <h2 class="text-2xl font-heading text-brand-dark mb-4">Kennenlernen</h2>
+            <p class="text-brand-text leading-relaxed">Wir treffen uns, persönlich oder per Videocall. Wir möchten wissen, wer ihr seid, wie eure Hochzeit aussieht und was ihr euch für euren Film wünscht. Und ihr könnt uns kennenlernen und entscheiden, ob die Chemie stimmt.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[120px_1fr] gap-8 items-start">
+          <div class="text-5xl font-heading text-brand-accent">03</div>
+          <div>
+            <h2 class="text-2xl font-heading text-brand-dark mb-4">Planung</h2>
+            <p class="text-brand-text leading-relaxed">Wenn alles passt, besprechen wir die Details: Tagesablauf, wichtige Momente, Locations, besondere Wünsche. Wir kümmern uns um die Planung, damit ihr euch auf das Wesentliche konzentrieren könnt: eure Hochzeit.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[120px_1fr] gap-8 items-start">
+          <div class="text-5xl font-heading text-brand-accent">04</div>
+          <div>
+            <h2 class="text-2xl font-heading text-brand-dark mb-4">Euer Hochzeitstag</h2>
+            <p class="text-brand-text leading-relaxed">Am Tag selbst sind wir einfach da. Wir begleiten euch von den Vorbereitungen bis zur Party: leise, aufmerksam, ohne zu stören. Keine Regie, die Szenen nachstellen will. Keine künstlichen Posen. Nur echte Momente, cinematisch eingefangen.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[120px_1fr] gap-8 items-start">
+          <div class="text-5xl font-heading text-brand-accent">05</div>
+          <div>
+            <h2 class="text-2xl font-heading text-brand-dark mb-4">Euer Film</h2>
+            <p class="text-brand-text leading-relaxed">In den Wochen nach eurer Hochzeit entsteht euer Film. Sorgfältig geschnitten, farblich abgestimmt, mit Musik, die zu eurem Tag passt. Das Ergebnis: ein Film, der euch jedes Mal zurück an diesen Tag bringt.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-padding bg-brand-cream">
+    <div class="container-narrow">
+      <h2 class="text-3xl font-heading text-center text-brand-dark mb-16">Häufige Fragen</h2>
+      <div class="space-y-8 max-w-2xl mx-auto">
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">Wie lange ist der fertige Highlight Film?</h3>
+          <p class="text-brand-text leading-relaxed">In der Regel ~5 Minuten, lang genug, um die Geschichte eures Tages zu erzählen, kurz genug, um ihn immer wieder sehen zu wollen.</p>
+        </div>
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">Wie lange dauert die Postproduktion?</h3>
+          <p class="text-brand-text leading-relaxed">In der Regel 5-6 Wochen nach der Hochzeit. Gute Postproduktion braucht Zeit, und euer Film verdient die beste.</p>
+        </div>
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">Wie groß ist das Team am Hochzeitstag?</h3>
+          <p class="text-brand-text leading-relaxed">In der Regel begleiten wir euch als kleines, diskretes Team. Bei größeren Hochzeiten oder besonderen Wünschen erweitern wir das Setup um eine zusätzliche Kameraperspektive.</p>
+        </div>
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">Filmt ihr auch die Party?</h3>
+          <p class="text-brand-text leading-relaxed">Ja! Die Party gehört zum Tag, und oft entstehen dort die schönsten Momente.</p>
+        </div>
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">Was ist, wenn es regnet?</h3>
+          <p class="text-brand-text leading-relaxed">Dann wird es atmosphärisch. Ernsthaft: Manche der schönsten Hochzeitsfilme entstehen bei Regen. Wir arbeiten mit jedem Wetter und finden immer das Schöne darin.</p>
+        </div>
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">Können wir die Musik auswählen?</h3>
+          <p class="text-brand-text leading-relaxed">Wir machen euch Vorschläge, die zum Feeling eures Tages passen. Natürlich beziehen wir eure Wünsche und euren Musikgeschmack ein.</p>
+        </div>
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">Bietet ihr auch Fotografie an?</h3>
+          <p class="text-brand-text leading-relaxed">Ja, auf Wunsch fotografieren wir parallel zum Film, in derselben Bildsprache, aus einer Hand. So bekommt ihr Bewegtbild und Standbilder mit konsistenter Atmosphäre, ohne ein zweites Team koordinieren zu müssen. Im Gespräch klären wir, was zu eurem Tag passt.</p>
+        </div>
+
+        <div class="pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">Sind Aufnahmen vor oder nach dem Hochzeitstag möglich?</h3>
+          <p class="text-brand-text leading-relaxed">Ja, und sie machen euren Film oft erst richtig cinematisch. Ein Couple-Shoot oder Engagement-Film vor der Hochzeit, eine ergänzende Session danach am Lieblingsort: dort haben wir Zeit für bewusste Kompositionen, ruhige Bilder und Momente nur für euch, die am Hochzeitstag selbst kaum entstehen können. Diese Aufnahmen fließen direkt in euren Hochzeitsfilm ein oder werden zu eigenständigen kurzen Filmen, die eure Geschichte erzählen.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow text-center">
+      <h2 class="text-3xl font-heading text-brand-dark mb-6">Klingt gut?</h2>
+      <p class="text-brand-text max-w-xl mx-auto mb-10">Dann erzählt uns von eurem Tag.</p>
+      <a href="/kontakt" class="btn-primary">Kontakt aufnehmen</a>
+    </div>
+  </section>
+
+</Layout>
