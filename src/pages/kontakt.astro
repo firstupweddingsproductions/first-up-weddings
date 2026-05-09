@@ -63,6 +63,18 @@ import Layout from '../layouts/Layout.astro';
               <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Für einen Rückruf" class="w-full bg-brand-cream border border-brand-dark/10 px-4 py-3 text-sm text-brand-dark placeholder:text-brand-text/30 focus:border-brand-accent focus:outline-none transition-colors" />
             </div>
             <div>
+              <label for="event_type" class="block text-xs uppercase tracking-widest text-brand-text/60 mb-2">Art des Events</label>
+              <select id="event_type" name="event_type" class="w-full bg-brand-cream border border-brand-dark/10 px-4 py-3 text-sm text-brand-dark focus:border-brand-accent focus:outline-none transition-colors cursor-pointer">
+                <option value="">Bitte wählen</option>
+                <option value="Hochzeit">Hochzeit</option>
+                <option value="Verlobung">Verlobung</option>
+                <option value="Standesamt">Standesamt</option>
+                <option value="Proposal / Antrag">Proposal / Antrag</option>
+                <option value="Paarshooting">Paarshooting</option>
+                <option value="Sonstiges">Sonstiges</option>
+              </select>
+            </div>
+            <div>
               <label for="date" class="block text-xs uppercase tracking-widest text-brand-text/60 mb-2">Hochzeitsdatum *</label>
               <input type="text" id="date" name="date" required placeholder="Datum oder geplanter Zeitraum" class="w-full bg-brand-cream border border-brand-dark/10 px-4 py-3 text-sm text-brand-dark placeholder:text-brand-text/30 focus:border-brand-accent focus:outline-none transition-colors" />
             </div>

@@ -13,9 +13,20 @@ import Layout from '../layouts/Layout.astro';
           <p class="text-lg text-brand-text">Von der ersten Nachricht bis zum fertigen Film, Schritt für Schritt, ohne Stress, mit viel Vorfreude.</p>
         </div>
       </div>
-      <!-- Video, full right half -->
-      <div class="relative bg-brand-warm overflow-hidden h-[60vh] lg:h-auto">
-        <video src="/einblick.mp4" poster="/einblick-poster.jpg" autoplay muted loop playsinline preload="metadata" class="absolute inset-0 w-full h-full object-cover"></video>
+      <!-- Video, full right half. Mobile: stable svh (no jump on URL-bar collapse). Desktop: stretches to grid row. -->
+      <div class="relative bg-brand-warm overflow-hidden h-[60svh] lg:h-auto">
+        <video
+          src="/einblick.mp4"
+          poster="/einblick-poster.jpg"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          disablepictureinpicture
+          class="absolute inset-0 w-full h-full object-cover"
+          style="transform: translateZ(0); backface-visibility: hidden;"
+        ></video>
       </div>
     </div>
   </section>
