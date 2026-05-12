@@ -1,0 +1,99 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout lang="en" title="Investment" description="Your wedding film: individual, personal, and tailored to your day.">
+
+  <!-- INTRO -->
+  <section class="section-padding bg-brand-cream pt-32">
+    <div class="container-narrow text-center">
+      <h1 class="text-4xl md:text-5xl font-heading text-brand-dark mb-6">Your film, your framework.</h1>
+      <p class="text-lg text-brand-text max-w-xl mx-auto">A wedding film is not an expense — it is an investment in memories that last.</p>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHIE -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow">
+      <div class="max-w-2xl mx-auto text-center space-y-6">
+        <p class="text-lg text-brand-text leading-relaxed">
+          Every wedding is different. That is why we don't offer rigid packages, but a personal framework built around your day, your wishes, and your vision.
+        </p>
+        <p class="text-brand-text leading-relaxed">
+          In the conversation we clarify together what matters to you: whether a compact highlight film or a fuller cinematic narrative of your entire day. The scope follows your vision and what makes sense for the day.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAS ENTHALTEN IST -->
+  <section class="section-padding bg-brand-cream">
+    <div class="container-narrow">
+      <h2 class="text-3xl font-heading text-center text-brand-dark mb-16">What every collaboration includes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div class="bg-brand-warm p-8">
+          <h3 class="text-lg font-heading text-brand-dark mb-3">A real introduction</h3>
+          <p class="text-sm text-brand-text leading-relaxed">An in-depth conversation, by video or in person. We get to know you, understand your vision, and advise you openly and honestly.</p>
+        </div>
+        <div class="bg-brand-warm p-8">
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Professional presence</h3>
+          <p class="text-sm text-brand-text leading-relaxed">On the wedding day we are there discreetly, with professional camera gear and an eye for the moments that define your day.</p>
+        </div>
+        <div class="bg-brand-warm p-8">
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Careful post-production</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Editing, color grading, sound mix, music selection — your film gets the care and the time it deserves.</p>
+        </div>
+        <div class="bg-brand-warm p-8">
+          <h3 class="text-lg font-heading text-brand-dark mb-3">Your finished film</h3>
+          <p class="text-sm text-brand-text leading-relaxed">Delivered in highest quality as a download. Yours, forever: to watch, share, and relive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÖGLICHKEITEN -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow">
+      <h2 class="text-3xl font-heading text-center text-brand-dark mb-6">What's possible beyond that</h2>
+      <p class="text-brand-text text-center max-w-2xl mx-auto mb-12">Depending on what matters to you and how your day unfolds, the scope can be tailored individually.</p>
+      <div class="max-w-2xl mx-auto space-y-4">
+        {[
+          'Full-day coverage, from the preparations to the last dance',
+          'A short version for social media, to share with family and friends',
+          'A trailer teaser within days after the wedding',
+          'An additional camera perspective for larger celebrations',
+          'Raw-edit sequences of selected special moments',
+          'Getting-ready coverage on the evening before or on the morning of',
+          'Engagement film, proposal coverage, or save-the-date video',
+          'Complementary photography in the same visual style, captured from within the filmmaking flow',
+        ].map(item => (
+          <div class="flex items-start gap-4 text-brand-text">
+            <span class="text-brand-accent mt-1 shrink-0">—</span>
+            <p class="text-sm leading-relaxed">{item}</p>
+          </div>
+        ))}
+      </div>
+      <p class="text-sm text-brand-text/60 text-center mt-10 italic max-w-xl mx-auto">
+        Not fixed packages — building blocks that adapt to your day. If you'd like, we can capture professional stills alongside the film, in the same style, all from one team. We figure out together what fits.
+      </p>
+    </div>
+  </section>
+
+  <!-- HINWEIS -->
+  <section class="section-padding bg-brand-cream">
+    <div class="container-narrow text-center">
+      <p class="text-brand-text leading-relaxed max-w-2xl mx-auto">
+        We discuss concrete investment figures personally with you, so the proposal really fits your day and your vision. Just write to us and we'll come back with all the details.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow text-center">
+      <h2 class="text-3xl font-heading text-brand-dark mb-6">Tell us about your day.</h2>
+      <p class="text-brand-text max-w-xl mx-auto mb-10">Reach out and we'll send you an individual proposal tailored to your wishes.</p>
+      <a href="/en/contact" class="btn-primary">Request a quote</a>
+    </div>
+  </section>
+
+</Layout>

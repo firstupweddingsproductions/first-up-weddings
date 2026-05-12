@@ -1,0 +1,142 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout lang="en" title="Your day" description="What to expect: from the first message to the finished film.">
+
+  <!-- INTRO + SHOWREEL -->
+  <section class="bg-brand-cream pt-32 lg:pt-0 pb-12 lg:pb-0">
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-stretch lg:min-h-[calc(100vh-73px)]">
+      <!-- Text on left -->
+      <div class="flex items-center justify-center lg:justify-start px-6 md:px-12 lg:pl-24 lg:pr-12 py-8 lg:py-24">
+        <div class="text-center lg:text-left max-w-xl">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading text-brand-dark mb-6">What to expect.</h1>
+          <p class="text-lg text-brand-text">From the first message to the finished film — step by step, no stress, plenty to look forward to.</p>
+        </div>
+      </div>
+      <!-- Video, full right half -->
+      <div class="relative bg-brand-warm overflow-hidden h-[60svh] lg:h-auto">
+        <video
+          src="/einblick.mp4"
+          poster="/einblick-poster.jpg"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          disablepictureinpicture
+          class="absolute inset-0 w-full h-full object-cover"
+          style="transform: translateZ(0); backface-visibility: hidden;"
+        ></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABLAUF -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow">
+      <div class="space-y-16">
+
+        <div class="grid grid-cols-1 lg:grid-cols-[120px_1fr] gap-8 items-start">
+          <div class="text-5xl font-heading text-brand-accent">01</div>
+          <div>
+            <h2 class="text-2xl font-heading text-brand-dark mb-4">Your inquiry</h2>
+            <p class="text-brand-text leading-relaxed">You write to us and tell us about yourselves, your day, and what matters to you. No formal briefing required — just a message.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[120px_1fr] gap-8 items-start">
+          <div class="text-5xl font-heading text-brand-accent">02</div>
+          <div>
+            <h2 class="text-2xl font-heading text-brand-dark mb-4">Getting to know each other</h2>
+            <p class="text-brand-text leading-relaxed">We meet — in person or by video call. We want to know who you are, what your wedding looks like, and what you wish for in your film. And you get to know us and decide whether the chemistry is right.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[120px_1fr] gap-8 items-start">
+          <div class="text-5xl font-heading text-brand-accent">03</div>
+          <div>
+            <h2 class="text-2xl font-heading text-brand-dark mb-4">Planning</h2>
+            <p class="text-brand-text leading-relaxed">If everything fits, we go through the details: timeline of the day, key moments, locations, special wishes. We take care of the planning so you can focus on what matters: your wedding.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[120px_1fr] gap-8 items-start">
+          <div class="text-5xl font-heading text-brand-accent">04</div>
+          <div>
+            <h2 class="text-2xl font-heading text-brand-dark mb-4">Your wedding day</h2>
+            <p class="text-brand-text leading-relaxed">On the day itself, we are simply there. We accompany you from the preparations to the party — quietly, attentively, without getting in the way. No direction that re-stages scenes. No artificial posing. Only real moments, captured cinematically.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[120px_1fr] gap-8 items-start">
+          <div class="text-5xl font-heading text-brand-accent">05</div>
+          <div>
+            <h2 class="text-2xl font-heading text-brand-dark mb-4">Your film</h2>
+            <p class="text-brand-text leading-relaxed">In the weeks after your wedding, your film takes shape. Carefully edited, color-graded, scored with music that fits your day. The result: a film that takes you back to this day every time you watch it.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-padding bg-brand-cream">
+    <div class="container-narrow">
+      <h2 class="text-3xl font-heading text-center text-brand-dark mb-16">Frequently asked</h2>
+      <div class="space-y-8 max-w-2xl mx-auto">
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">How long is the finished highlight film?</h3>
+          <p class="text-brand-text leading-relaxed">Typically around 5 minutes — long enough to tell the story of your day, short enough to want to watch it again and again.</p>
+        </div>
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">How long does post-production take?</h3>
+          <p class="text-brand-text leading-relaxed">Usually 5–6 weeks after the wedding. Good post-production needs time, and your film deserves the best.</p>
+        </div>
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">How large is the team on the wedding day?</h3>
+          <p class="text-brand-text leading-relaxed">Usually we accompany you as a small, discreet team. For larger weddings or specific wishes, we add an additional camera perspective.</p>
+        </div>
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">Do you film the party too?</h3>
+          <p class="text-brand-text leading-relaxed">Yes! The party is part of the day, and often the most beautiful moments happen there.</p>
+        </div>
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">What if it rains?</h3>
+          <p class="text-brand-text leading-relaxed">Then it becomes atmospheric. Seriously — some of the most beautiful wedding films happen in rain. We work in any weather and always find the beauty in it.</p>
+        </div>
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">Can we choose the music?</h3>
+          <p class="text-brand-text leading-relaxed">We suggest tracks that fit the feeling of your day. Of course we listen to your wishes and your taste.</p>
+        </div>
+
+        <div class="border-b border-brand-dark/10 pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">Do you also offer photography?</h3>
+          <p class="text-brand-text leading-relaxed">Yes — on request, we shoot stills alongside the film, in the same visual language, all from one team. You get motion and stills with consistent atmosphere without having to coordinate two teams. We'll discuss what fits your day in the conversation.</p>
+        </div>
+
+        <div class="pb-6">
+          <h3 class="font-heading text-lg text-brand-dark mb-3">Are shoots before or after the wedding day possible?</h3>
+          <p class="text-brand-text leading-relaxed">Yes — and they often make your film truly cinematic. A couple shoot or engagement film before the wedding, an additional session afterwards at a favourite location: there we have time for deliberate compositions, quiet frames, and moments just for you that rarely happen on the wedding day itself. These shoots flow directly into your wedding film or become short standalone films telling your story.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding bg-brand-warm">
+    <div class="container-narrow text-center">
+      <h2 class="text-3xl font-heading text-brand-dark mb-6">Sounds good?</h2>
+      <p class="text-brand-text max-w-xl mx-auto mb-10">Then tell us about your day.</p>
+      <a href="/en/contact" class="btn-primary">Get in touch</a>
+    </div>
+  </section>
+
+</Layout>

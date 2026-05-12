@@ -2,30 +2,48 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { detectLang, getAlternateLocaleUrl, type Lang } from '../i18n/routes';
 
 interface Props {
   title: string;
   description?: string;
   ogImage?: string;
+  lang?: Lang;
 }
+
+const detected = detectLang(Astro.url.pathname);
 
 const {
   title,
-  description = 'Cinematische Hochzeitsfilme, die Emotionen bewahren. Euer Tag, erzählt wie ein Film.',
+  description = detected === 'en'
+    ? 'Cinematic wedding films that preserve real emotions. Your day, told like a film.'
+    : 'Cinematische Hochzeitsfilme, die Emotionen bewahren. Euer Tag, erzählt wie ein Film.',
   ogImage = '/both.jpg',
+  lang = detected,
 } = Astro.props;
 
 const fullTitle = `${title} — First Up Weddings`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+const alternatePath = getAlternateLocaleUrl(Astro.url.pathname, lang);
+const alternateURL = new URL(alternatePath, Astro.site).toString();
 const ogImageURL = new URL(ogImage, Astro.site).toString();
+const ogLocale = lang === 'en' ? 'en_US' : 'de_DE';
+const ogLocaleAlt = lang === 'en' ? 'de_DE' : 'en_US';
+const otherLang: Lang = lang === 'de' ? 'en' : 'de';
+const defaultURL = lang === 'de' ? canonicalURL : alternateURL;
 ---
 <!doctype html>
-<html lang="de">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
+
+    <!-- hreflang alternates -->
+    <link rel="alternate" hreflang={lang} href={canonicalURL} />
+    <link rel="alternate" hreflang={otherLang} href={alternateURL} />
+    <link rel="alternate" hreflang="x-default" href={defaultURL} />
 
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -34,7 +52,8 @@ const ogImageURL = new URL(ogImage, Astro.site).toString();
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="de_DE" />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:locale:alternate" content={ogLocaleAlt} />
     <meta property="og:site_name" content="First Up Weddings" />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
@@ -53,10 +72,10 @@ const ogImageURL = new URL(ogImage, Astro.site).toString();
     <title>{fullTitle}</title>
   </head>
   <body class="min-h-screen flex flex-col">
-    <Header />
+    <Header lang={lang} />
     <main class="flex-1">
       <slot />
     </main>
-    <Footer />
+    <Footer lang={lang} />
   </body>
 </html>
