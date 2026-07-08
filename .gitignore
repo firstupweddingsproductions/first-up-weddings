@@ -31,3 +31,6 @@ pnpm-debug.log*
 .dev.vars*
 !.dev.vars.example
 !.env.example
+
+# Claude Code session config
+.claude/
